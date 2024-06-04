@@ -9,7 +9,7 @@ if (!$_SESSION['userID']) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Expense Management system-Manage users</title>
+    <title> patient_system-Manage users</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
 
@@ -32,16 +32,17 @@ if (!$_SESSION['userID']) {
 
                         <div class="box">
                             <div class="box-header">
-                                <h3 class="box-title">Accounts List</h3>
+                                <h3 class="box-title">patient_registration List</h3>
                             </div><!-- /.box-header -->
                             <div class="box-body table-responsive">
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>Id</th>
                                             <th>Name</th>
-                                            <th>Code</th>
-
+                                            <th>Tell</th>
+                                            <th>District</th>
+                                            <th>department</th>
                                             <th>Actions</th>
                                         </tr>
                                     <tbody>
@@ -50,7 +51,7 @@ if (!$_SESSION['userID']) {
                                         <?php
 
                                         include 'includes/connect.php';
-                                        $sql = "SELECT * FROM accounts";
+                                        $sql = "SELECT * FROM patient_registration";
                                         $r = mysqli_query($conn, $sql);
 
                                         while ($row = mysqli_fetch_assoc($r)) {
@@ -58,10 +59,11 @@ if (!$_SESSION['userID']) {
 
                                         ?>
                                             <tr>
-                                                <td><?php echo $row['id']; ?></td>
-                                                <td><?php echo $row['name']; ?></td>
-                                                <td><?php echo $row['code']; ?></td>
-
+                                                <td><?php echo $row['Id']; ?></td>
+                                                <td><?php echo $row['P_name']; ?></td>
+                                                <td><?php echo $row['Tell']; ?></td>
+                                                <td><?php echo $row['District']; ?></td>
+                                                <td><?php echo $row['Department']; ?></td>
 
                                                 <td>
                                                     <?php
@@ -72,13 +74,13 @@ if (!$_SESSION['userID']) {
                                                     <?php  } else {
 
                                                     ?>
-                                                        <a href="editAccounts.php?Aid=<?php echo $row['id']; ?>">
+                                                        <a href="editusers.php?uid=<?php echo $row['Id']; ?>">
 
-                                                            <button class="btn btn-info">Edit</button>
+                                                            <button class="btn btn-info fa fa-edit">Edit</button>
 
                                                         </a>
-                                                        <a href="backend/accounts.php?Aid=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?');">
-                                                            <button class="btn btn-danger">Delete</button>
+                                                        <a href="backend/patient.php?uid=<?php echo $row['Id']; ?>" onclick="return confirm('Are you sure?');">
+                                                            <button class="btn btn-danger info fa fa-trash-o"></button>
                                                         </a>
                                                     <?php
                                                     } ?>

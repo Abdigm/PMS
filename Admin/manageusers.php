@@ -74,11 +74,11 @@ if (!$_SESSION['userID']) {
                                                     ?>
                                                         <a href="editusers.php?uid=<?php echo $row['id']; ?>">
 
-                                                            <button class="btn btn-info">Edit</button>
+                                                            <button class="btn btn-info fa fa-edit">Edit</button>
 
                                                         </a>
                                                         <a href="backend/users.php?uid=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?');">
-                                                            <button class="btn btn-danger">Delete</button>
+                                                            <button class="btn btn-danger info fa fa-trash-o"></button>
                                                         </a>
                                                     <?php
                                                     } ?>

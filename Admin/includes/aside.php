@@ -46,8 +46,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="newuser.php"><i class="fa fa-angle-double-right"></i> New patient</a></li>
-                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage patient</a></li>
+                    <li><a href="newpatient.php"><i class="fa fa-angle-double-right"></i> New patient</a></li>
+                    <li><a href="managepatient.php"><i class="fa fa-angle-double-right"></i> Manage patient</a></li>
                 </ul>
             </li>
             <!-- <li>
