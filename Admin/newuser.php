@@ -60,7 +60,7 @@ if (!$_SESSION['userID']) {
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" name="email" class="form-control" placeholder="Enter email">
+                                    <input type="email" name="email" class="form-control" placeholder="Enter email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>

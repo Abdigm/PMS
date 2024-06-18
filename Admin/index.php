@@ -13,7 +13,14 @@ if (!$_SESSION['userID']) {
     <title>Dashboard</title>
 
 </head>
+<style>
+    body {
+        background-image: url('Admin/images/socod.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+</style>
 <body>
     <?php include 'includes/header.php'; ?>
     <div class="wrapper row-offcanvas row-offcanvas-left">
@@ -44,7 +51,7 @@ if (!$_SESSION['userID']) {
                         <div class="small-box bg-aqua">
                             <div class="inner">
                                 <h3>
-                                    $150
+                                    $
                                 </h3>
                                 <p>
                                     today's Expenses

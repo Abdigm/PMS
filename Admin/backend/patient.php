@@ -16,21 +16,7 @@ if (isset($_POST['btnSave'])) {
         echo "error".mysqli_error($conn);
     }
 }
-
-// <?php
-// include '../includes/connect.php';
-// //save
-// if (isset($_POST['btnSave'])) {
-//     $name = $_POST['name'];
-//     $code = $_POST['code'];
-
-//     $sql = "INSERT INTO patient_registration (name,code) VALUES('$name','$code')";
-//     $q = mysqli_query($conn, $sql);
-//     if ($q) {
-
-//         echo "<script>alert('successfully saved'); location='../managepatient.php';</script>";
-//     }
-// }
+ 
 //delete
 if (isset($_GET['pid'])) {
     $id = $_GET['pid'];
