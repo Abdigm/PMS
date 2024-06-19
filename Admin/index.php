@@ -18,8 +18,7 @@ if (!$_SESSION['userID']) {
         background-image: url('Admin/images/socod.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
+     
 </style>
 <body>
     <?php include 'includes/header.php'; ?>
@@ -58,7 +57,8 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-wheelchair"></i>
+                            <i class="fa fa-wheelchair"></i>
+                                
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -77,7 +77,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-wheelchair"></i>
+                            <i class="fa fa-user add  "></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -96,7 +96,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-wheelchair"></i>
+                            <i class="fa fa-stethoscope icon "></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -115,7 +115,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-user md"></i>
+                                <i class=" fa fa-user md-icon"></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>

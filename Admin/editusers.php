@@ -42,13 +42,13 @@ if (!$_SESSION['userID']) {
                                 include 'includes/connect.php';
                                 $id = $_GET['uid'];
                                 $sql = "SELECT * FROM users WHERE id='$id' ";
-                                $q = mysqli_query($conn, $sql);
+                                $q = mysqli_query($conn,$sql);
                                 if ($q->num_rows > 0) {
                                     $row = mysqli_fetch_assoc($q);
                                 }
                                 ?>
                                 <div class="form-group">
-                                    <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>" readonly>
+                                    <input type="hijodden" name="id" class="form-control" value="<?php echo $row['id']; ?>" readonly>
                                     <label for="exampleInputEmail1">Full name</label>
                                     <input type="text" name="name" class="form-control" placeholder="Enter fullname" value="<?php echo $row['name']; ?>">
                                 </div>
