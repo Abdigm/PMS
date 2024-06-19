@@ -13,7 +13,14 @@ if (!$_SESSION['userID']) {
     <title>Dashboard</title>
 
 </head>
+<style>
+    body {
+        background-image: url('Admin/images/socod.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+</style>
 <body>
     <?php include 'includes/header.php'; ?>
     <div class="wrapper row-offcanvas row-offcanvas-left">
@@ -44,14 +51,14 @@ if (!$_SESSION['userID']) {
                         <div class="small-box bg-aqua">
                             <div class="inner">
                                 <h3>
-                                    $150
+                                    $
                                 </h3>
                                 <p>
-                                    today's Expenses
+                                    Total ptient
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-bag"></i>
+                                <i class="ion ion-wheelchair"></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -70,7 +77,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
+                                <i class="ion ion-wheelchair"></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -89,7 +96,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-person-add"></i>
+                                <i class="ion ion-wheelchair"></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
@@ -108,7 +115,7 @@ if (!$_SESSION['userID']) {
                                 </p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-pie-graph"></i>
+                                <i class="ion ion-user md"></i>
                             </div>
                             <a href="#" class="small-box-footer">
                                 More info <i class="fa fa-arrow-circle-right"></i>
