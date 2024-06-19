@@ -12,3 +12,20 @@ if (isset($_POST['btnSave'])) {
         echo "<script>alert('successfully saved'); location='../manageusers.php';</script>";
     }
 }
+
+//update
+if (isset($_POST['btnUpdate'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = ($_POST['password']);
+    $role = $_POST['role'];
+    $id = $_POST['id'];
+    $sql = "UPDATE users SET name='$name', email='$email' password='$password' role='$role'
+    WHERE id='$id'";
+    $q = mysqli_query($conn, $sql);
+    if ($q) {
+        echo "<script>alert('successfully Updated'); location='../manageusers.php';</script>";
+    } else {
+        echo "error";
+    }
+}
