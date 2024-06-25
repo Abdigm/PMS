@@ -45,7 +45,7 @@ if (!$_SESSION['userID']) {
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Patient Name</label>
-                                    <input type="text" name="Name" class="form-control" placeholder="Enter fullname">
+                                    <input type="text" name="PName" class="form-control" placeholder="Enter fullname">
                                 </div>
                            
                                 <div class="form-group">
