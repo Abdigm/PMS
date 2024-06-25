@@ -10,7 +10,7 @@ if (!$_SESSION['userID']) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense management System-New users</title>
+    <title>  users</title>
 
 </head>
 
@@ -49,13 +49,12 @@ if (!$_SESSION['userID']) {
                                 ?>
                                 <div class="form-group">
                                     <input type="hidden" name="id" class="form-control" value="<?php echo $row['pid']; ?>" readonly>
-                                    <label for="exampleInputEmail1">Name</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Enter fullname" value="<?php echo $row['name']; ?>">
+                                    <label for="exampleInputEmail1">P-Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Pname" value="<?php echo $row['Pname']; ?>">
                                 </div>
-
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Code</label>
-                                    <input type="code" name="code" class="form-control" value="<?php echo $row['code']; ?>">
+                                    <label for="exampleInputEmail1">Tell</label>
+                                    <input type="text" name="tell" class="form-control" value="<?php echo $row['tell']; ?>">
                                 </div>
 
 
